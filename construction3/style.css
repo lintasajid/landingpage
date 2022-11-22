@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto:wght@100&display=swap');
+body {
+    background-image: url("images/bubbles.jpg") ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.box{
+    width:1000px;
+    background-color:  #e6e6e6;
+    padding:30px;
+    margin:auto;
+}
+img {
+    width:auto;
+    height:auto;
+}
+.boxcontainer{
+    display:flex;flex-direction: column;
+}
+.textbox{
+    font-family: 'kanit';
+    text-align: center;
+    font-size: 30px;
+    color: #242283;
+}
