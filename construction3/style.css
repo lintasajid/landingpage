@@ -1,22 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto:wght@100&display=swap');
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .boxcontainer{
+        flex-direction: column;
+    }
+
+    .textbox h1{
+        font-size: 2rem !important;
+    }
+
+    .main {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  @media only screen and (max-width:1000px) {
+    /* For mobile phones: */
+    .textbox{
+        font-size: 20px !important;
+    }
+
+    .menu, .main, .right {
+      width: 100%;
+    }
+}
 body {
     background-image: url("images/bubbles.jpg") ; 
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    grid-template-columns: 100%;
     height:100vh;
+    /* overflow: hidden; */
 }
 .box{
-    width:1000px;
+    width:70%;
     background-color:  #e6e6e6;
     padding:30px;
     margin:auto;
+    height:100vh;
 }
 img {
-    width:auto;
+    width:100%;
     height:auto;
 }
 .boxcontainer{
-    display:flex;flex-direction: column;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .textbox{
     font-family: 'kanit';

@@ -1,21 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto:wght@100&display=swap');
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .boxcontainer{
+        flex-direction: column;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
+    .textbox h1{
+        font-size: 2rem !important;
+    }
+
+    .main {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width:1000px) {
+    /* For mobile phones: */
+    .textbox{
+        font-size: 20px !important;
+    }
+
+    .menu, .main, .right {
+      width: 100%;
+    }
 }
 
 body {
-    background-image: url("images/artistic-colorful-background-background-abstraction-gradient-and-gradient.jpg") ; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;
+    background-image: url(images/artistic-colorful-background-background-abstraction-gradient-and-gradient.jpg) ; 
+    max-width: 100%;
+    background-repeat:repeat;
+    grid-template-columns: 100%;
+    /* overflow: hidden; */
+    height:100%;
+
+ 
 }
 .box{
-    width:1000px;
+    background-size: cover;
+    width:70%;
+    /* height: 80vh; */
     background-color:  #e6e6e6;
-    padding:30px 80px;
-    margin:70px;
+    padding:30px 100px;
+    margin:auto;
 }
 img {
     align-items: center;
@@ -23,7 +49,9 @@ img {
     height:auto;
 }
 .boxcontainer{
-    display:flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .textbox{
     font-family: 'kanit';
@@ -31,3 +59,4 @@ img {
     font-size: 30px;
     color: orangered;
 }
+
