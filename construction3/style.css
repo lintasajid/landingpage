@@ -36,9 +36,9 @@ body {
 .box{
     width:70%;
     background-color:  #e6e6e6;
-    padding:30px;
+   /* padding:30px;*/
     margin:auto;
-    height:100vh;
+    height:100%;
 }
 img {
     width:100%;
